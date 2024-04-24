@@ -25,6 +25,9 @@ export default function Posts() {
   return (
     <main>
       <h1>Posts</h1>
+      <Link to="admin" className="text-red-600 underline">
+        管理者ページ
+      </Link>
       <ul>
         {posts.map((post) => (
           <li key={post.slug}>
